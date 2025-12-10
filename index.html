@@ -1,1 +1,334 @@
-<h1>Halo, website sudah aktif!</h1>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Restoran Siap Makan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      overflow-x: hidden;
+      animation: pageFade 1.2s ease;
+    }
+    @keyframes pageFade {
+      from {opacity:0; transform: scale(0.98);}
+      to {opacity:1; transform: scale(1);}
+    }
+    header {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: #fff;
+      padding: 25px 0 15px 0;
+      text-align: center;
+      animation: fadeDown 1.5s ease;
+    }
+    header h1 {
+      font-size: 2.2em;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+    }
+    @keyframes fadeDown {
+      from {opacity:0; transform: translateY(-40px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(44,62,80,0.12);
+      text-align: center;
+      animation: fadeUp 1.5s ease;
+    }
+    @keyframes fadeUp {
+      from {opacity:0; transform: translateY(40px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #16a085;
+      margin-bottom: 20px;
+      object-fit: cover;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%,100% {transform: translateY(0);}
+      50% {transform: translateY(-18px);}
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+      from {opacity:0;}
+      to {opacity:1;}
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 26px;
+      list-style: none;
+      margin: 30px 0 20px 0;
+      padding: 0;
+    }
+    nav a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      background: #f0f0f0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+    nav a::after {
+      content:"";
+      position:absolute;
+      bottom:0; left:0;
+      width:0%; height:3px;
+      background:#16a085;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {width:100%;}
+    nav a.active, nav a:hover {
+      background: #16a085;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    .logo-nav {
+      width: 26px;
+      height: 26px;
+      margin-right: 7px;
+      vertical-align: middle;
+      animation: spin 3s linear infinite;
+    }
+    @keyframes spin {
+      0% {transform: rotateY(0);}
+      100% {transform: rotateY(360deg);}
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 12px 0;
+      margin-top: 30px;
+      animation: fadeIn 2s ease;
+    }
+    footer p {font-size:0.9em;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Restoran Siap Makan</h1>
+  </header>
+
+  <main>
+    <!-- Foto profil tanpa tulisan tambahan -->
+    <img src="makan.jpg" class="profile-img">
+
+    <h2>Selamat Datang</h2>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="rayyan.html" class="active">👤 Nama Pemilik</a>
+        </li>
+        <li>
+          <a href="ziyad7.html">🍽 Pilihan Makanan</a>
+        </li>
+        <li>
+          <a href="tugas.html">
+            
+            pesan sekarang
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <p>Ini adalah website sederhana yang berisi profil, informasi tentang saya, dan galeri foto. Silakan gunakan menu dengan logo di atas!</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ziyad Amru | Website Profil Sederhana</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Restoran Siap Makan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      overflow-x: hidden;
+      animation: pageFade 1.2s ease;
+    }
+    @keyframes pageFade {
+      from {opacity:0; transform: scale(0.98);}
+      to {opacity:1; transform: scale(1);}
+    }
+    header {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: #fff;
+      padding: 25px 0 15px 0;
+      text-align: center;
+      animation: fadeDown 1.5s ease;
+    }
+    header h1 {
+      font-size: 2.2em;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+    }
+    @keyframes fadeDown {
+      from {opacity:0; transform: translateY(-40px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(44,62,80,0.12);
+      text-align: center;
+      animation: fadeUp 1.5s ease;
+    }
+    @keyframes fadeUp {
+      from {opacity:0; transform: translateY(40px);}
+      to {opacity:1; transform: translateY(0);}
+    }
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #16a085;
+      margin-bottom: 20px;
+      object-fit: cover;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%,100% {transform: translateY(0);}
+      50% {transform: translateY(-18px);}
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+      animation: fadeIn 2s ease;
+    }
+    @keyframes fadeIn {
+      from {opacity:0;}
+      to {opacity:1;}
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 26px;
+      list-style: none;
+      margin: 30px 0 20px 0;
+      padding: 0;
+    }
+    nav a {
+      color: #2c3e50;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      background: #f0f0f0;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: relative;
+      overflow: hidden;
+    }
+    nav a::after {
+      content:"";
+      position:absolute;
+      bottom:0; left:0;
+      width:0%; height:3px;
+      background:#16a085;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {width:100%;}
+    nav a.active, nav a:hover {
+      background: #16a085;
+      color: #fff;
+      transform: scale(1.05);
+    }
+    .logo-nav {
+      width: 26px;
+      height: 26px;
+      margin-right: 7px;
+      vertical-align: middle;
+      animation: spin 3s linear infinite;
+    }
+    @keyframes spin {
+      0% {transform: rotateY(0);}
+      100% {transform: rotateY(360deg);}
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 12px 0;
+      margin-top: 30px;
+      animation: fadeIn 2s ease;
+    }
+    footer p {font-size:0.9em;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Restoran Siap Makan</h1>
+  </header>
+
+  <main>
+    <!-- Foto profil tanpa tulisan tambahan -->
+    <img src="makan.jpg" class="profile-img">
+
+    <h2>Selamat Datang</h2>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="rayyan.html" class="active">👤 Nama Pemilik</a>
+        </li>
+        <li>
+          <a href="ziyad7.html">🍽 Pilihan Makanan</a>
+        </li>
+        <li>
+          <a href="tugas.html">
+            
+            pesan sekarang
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <p>Ini adalah website sederhana yang berisi profil, informasi tentang saya, dan galeri foto. Silakan gunakan menu dengan logo di atas!</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ziyad Amru | Website Profil Sederhana</p>
+  </footer>
+</body>
+</html>
